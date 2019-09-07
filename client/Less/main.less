@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:500');
+
+body {
+  font-family: 'Poppins';
+  background-color: #f2f3f8;
+  color: black;
+  font-size: 25px;
+}
+
+body {
+    background-color: #f9f9f9;
+    canvas {
+        
+        width:100%;
+        height:100%;
+        margin-top: 70px;
+        border: solid 0px #fff;
+        background: white;
+        border-radius: 5px 5px 0px 0px;
+        box-shadow: 0 1px 15px 1px rgba(52,40,104,.08);
+
+    }
+
+    .main-container {
+        
+        width: 880px;
+        margin: 0 auto;
+        margin-top: 0px;
+       
+    }
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 38px;
+    background-color: white;
+    line-height: 46px;
+    font-size: 15px;
+    box-shadow: 0 1px 15px 1px rgba(52,40,104,.08);
+    
+
+    .stage {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.score, .hteam, .ateam, .time {
+  display: inline-block;
+  width: 102px;
+  height: 38px;
+  background-color: white;
+  line-height: 41px;
+  text-align: center;
+}
+.score {
+  position: relative;
+  background-color: #FF505F;
+  color: white;
+  box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.7);
+  z-index: 2;
+  margin: 0 -8px 0 -8px;
+}
+.score img {
+  position: absolute;
+  height: 38px;
+  width: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: 220px;
+}
+.time {
+  display: block;
+  margin: 0 auto;
+  letter-spacing: -1px;
+  background-color: #303245;
+  color: white;
+}
+.hteam, .ateam {
+  position: relative;
+}
+.hteam:before, .ateam:after {
+  position: absolute;
+  top: 0;
+  content: '';
+  display: block;
+  width: 6px;
+  height: 38px;
+}
+.hteam:before {
+  left: -5px;
+  background-color: #ea2212;
+}
+.ateam:after {
+  right: -5px;
+  background-color: #034694;
+}
+}
+
+.chat-input-container {
+    width: 840px;
+    position: fixed;
+    background: #448100;
+    height: 160px;
+    font-size: 13px;
+    overflow: hidden;
+    box-shadow: 0 1px 15px 1px rgba(52,40,104,.08);
+
+
+    .chat-box {
+        height: 80px;
+        background-color: #4D8B00;
+        box-shadow: 0 1px 15px 1px rgba(52,40,104,.08);
+        box-sizing: border-box;
+        margin: 10px;
+        width: ~"calc(90% - 10px)";
+        overflow-y: scroll;
+        border-radius: 5px;
+
+        .message {
+            display: block;
+            max-width: 100%;
+            max-height: 14px;
+            line-height: 14px;
+            color: #fff;
+            margin-top: 4px;
+            font-weight: 300;
+
+            span.nickname {
+                font-weight: 600;
+            }
+
+        }
+
+    }
+
+    .chat-input {
+        float: left;
+        width: 90%;
+        margin-top: 10px;
+
+        input {
+            width: ~"calc(100% - 10px)";
+            margin-left: 10px;
+            background-color: #4D8B00;
+            border: none;
+            color: #ffff;
+            padding: 5px;
+            outline: none;
+            border-radius: 5px;
+        }
+    }
+
+    .button.send {
+        line-height: 50px;
+        margin-left: 10px;
+        float: left;
+        width: ~"calc(10% - 10px)";
+        color: #fff;
+        cursor: pointer;
+    }
+}
